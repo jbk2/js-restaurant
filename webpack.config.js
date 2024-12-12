@@ -28,13 +28,17 @@ const config = {
 			// Add your rules for custom modules here
 			// Learn more about loaders from https://webpack.js.org/loaders/
 			{
-					test: /\.css$/i,
-					use: [stylesHandler,'css-loader'],
+				test: /\.css$/i,
+				use: [stylesHandler,'css-loader'],
 			},
 			{
-					test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
-					type: 'asset',
+				test: /\.html$/i,
+				loader: "html-loader",
 			},
+			{
+				test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif|webp)$/i,
+				type: 'asset',
+			}
 		],
 	},
 };

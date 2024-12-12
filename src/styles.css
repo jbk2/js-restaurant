@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --font-libre-baskerville: "Libre Baskerville", serif;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+}
+
+body {
+  font-family: var(--font-libre-baskerville);
+  font-weight: var(--font-weight-regular);
+}
+
+h1 {
+  letter-spacing: 0.05rem;
+  font-size: xx-large;
+  font-weight: var(--font-weight-bold);
+}
+
 nav {
   display: flex;
   justify-content: center;
@@ -12,3 +31,85 @@ button.tab {
   border-top-right-radius: 0.25rem;
   font-size: large;
 }
+
+section#ingredients {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 10rem;
+}
+
+section#ingredients div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#ingredients .content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+  padding-left: 3rem;
+}
+
+#ingredients .content p {
+  margin: 0;
+  max-width: 20rem;
+  flex-wrap: wrap;
+}
+
+section#chef {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 8rem;
+}
+
+section#reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 15rem;
+}
+
+section#reviews img {
+  /* height: 300px;
+  width: auto; */
+  /* mask-image: radial-gradient(circle, black 30%, transparent 50%); */
+  /* mask-image: radial-gradient(circle at center 20%, black 30%, transparent 50%); */
+  /* position: relative; */
+  /* top: 30px; */
+  /* transform: translateY(40px);
+  object-fit: cover; */
+}
+
+#pet1 {
+  height: 8rem;
+  width: auto;
+  border-radius: 50%;
+  /* mask-image: radial-gradient(circle, black 30%, transparent 50%); */
+}
+
+#pet2 {
+  height: 8rem;
+  width: auto;
+  border-radius: 50%;
+  border: 10px solid;
+  border-image: radial-gradient(circle, rgba(0, 0, 0, 0) 50%, black 100%);
+  border-image-slice: 1;
+  object-fit: cover;
+  /* mask-image: radial-gradient(circle at center 20%, black 30%, transparent 50%); */
+}
+
+#pet4 {
+  height: 6rem;
+  width: auto;
+  border-radius: 50%;
+}
+
+#sushi1-svg {
+  height: 6rem;
+  width: auto;
+}
+
