@@ -18,7 +18,7 @@ const config = {
 		// Add your plugins here
 		// Learn more about plugins from https://webpack.js.org/configuration/plugins/
 		new HtmlWebpackPlugin({
-      template: './src/index.html', // Use your src/index.html as a template
+      template: './src/template.html', // Use your src/index.html as a template
       filename: 'index.html', // Output file in the dist folder
     }),
     isProduction ? new MiniCssExtractPlugin() : null
