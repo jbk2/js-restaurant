@@ -1,6 +1,7 @@
 // Generated using webpack-cli https://github.com/webpack/webpack-cli
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const isProduction = process.env.NODE_ENV == 'production';
 const stylesHandler = isProduction ? MiniCssExtractPlugin.loader : 'style-loader';
 
@@ -16,7 +17,12 @@ const config = {
 	plugins: [
 		// Add your plugins here
 		// Learn more about plugins from https://webpack.js.org/configuration/plugins/
-	],
+		new HtmlWebpackPlugin({
+      template: './src/index.html', // Use your src/index.html as a template
+      filename: 'index.html', // Output file in the dist folder
+    }),
+    isProduction ? new MiniCssExtractPlugin() : null
+	].filter(Boolean),
 	module: {
 		rules: [
 			// Add your rules for custom modules here
