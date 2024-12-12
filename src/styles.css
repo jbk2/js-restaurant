@@ -1,6 +1,14 @@
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
 button.tab {
   background-color: paleturquoise;
-  border-bottom: 1px solid black;  
-  border-left: 1px solid black;  
-  border-right: 1px solid black;  
+  border: 1px solid black;  
+  border-bottom: none;
+  border-top-left-radius: 0.25rem;  
+  border-top-right-radius: 0.25rem;
+  font-size: large;
 }
