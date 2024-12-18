@@ -104,8 +104,12 @@ section#chef-section p {
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 6rem;
+  margin-top: 7rem;
   margin-bottom: 1rem;
+}
+
+#reviews-section span {
+  font-weight: var(--font-weight-bold);
 }
 
 #reviews {
