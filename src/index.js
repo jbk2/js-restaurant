@@ -23,11 +23,11 @@ document.addEventListener('DOMContentLoaded', () => {
     renderContactPage  
   }
   
-  // clearContent();
-  // renderHomePage();
+  clearContent();
+  renderHomePage();
   
   const buttons = document.querySelectorAll('button');
-  
+
   buttons.forEach((btn) => {
     btn.addEventListener('click', function () {
       const functionName = `render${this.textContent}Page`;

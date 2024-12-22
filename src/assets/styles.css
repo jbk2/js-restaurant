@@ -27,12 +27,19 @@ body {
   font-size: 3.6rem;
   position: absolute;
   margin: 0;
-  left: 10px;
-  top: -17px;
+  left: 1vw;
+  top: -3.5vh;
 }
 
 #logo-type.animate-logo {
   animation: animate-weight 0.8s ease-in-out forwards;
+}
+
+#japanese-flag {
+  font-size: 3rem;
+  position: absolute;
+  right: 1vw;
+  top: -4vh;
 }
 
 nav {
