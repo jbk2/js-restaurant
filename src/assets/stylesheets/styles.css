@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+  font-family: 'anybody';
+  src: url('/src/assets/fonts/anybody.ttf') format('truetype');
+}
+
+body {
+  font-family: "anybody";
+}
+
+/* ######################## Header/tab section ################################ */
+
+@keyframes animate-weight {
+  0% {
+    font-variation-settings: 'wght' 800, 'wdth' 100, 'ital' 0;
+  }
+  50% {
+    font-variation-settings: 'wght' 860, 'wdth' 100, 'ital' 0;
+  }
+  100% {
+    font-variation-settings: 'wght' 800, 'wdth' 100, 'ital' 0;
+  }
+}
+
+@keyframes animate-scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#logo-type {
+  font-size: 3.6rem;
+  position: absolute;
+  margin: 0;
+  left: 1vw;
+  top: -3.5vh;
+}
+
+#logo-type.animate-logo {
+  animation: animate-weight 0.8s ease-in-out forwards;
+}
+
+#japanese-flag {
+  font-size: 3rem;
+  position: absolute;
+  right: 1vw;
+  top: -4vh;
+}
+
+#japanese-flag.animate-flag {
+  animation: animate-scale 0.8s ease-in-out forwards;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 3rem;
+  border-bottom: 1px solid;
+  position: relative;
+}
+
+button {
+  font-family: "anybody";
+  font-variation-settings: 'wght' 500, 'wdth' 100, 'ital' 100;
+  font-size: small;
+}
+
+button.tab {
+  background-color: rgb(221, 251, 248);
+  border: 1px solid black;  
+  border-bottom: none;
+  border-top-left-radius: 0.25rem;  
+  border-top-right-radius: 0.25rem;
+  padding: 0.6rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+p {
+  color: rgb(100, 100, 100);
+}
+
+
+
