@@ -3,40 +3,21 @@
 @font-face {
   font-family: 'anybody';
   src: url('./fonts/anybody.ttf') format('truetype');
-  font-weight: 100 900;
-  /* font-stretch: ultra-condensed; */
-  /* font-style: normal; */
 }
 
 body {
   font-family: "anybody";
-  /* font-family: var(--font-libre-baskerville);
-  font-weight: var(--font-weight-regular); */
-}
-
-.logo-type {
-  /* font-family: "anybody"; */
-  font-size: 3.6rem;
-  /* font-variation-settings: ; */
-  /* align-self: flex-start; */
-  /* margin-right: auto; */
-  position: absolute;
-  margin: 0;
-  /* margin-top: 0.3rem; */
-  left: 10px;
-  top: -17px
-}
-
-h1 {
-  font-size: x-large;
-}
-
-p {
-  font-family: "Montserrat";
-  font-size: medium;
 }
 
 /* ######################## Header/tab section ################################ */
+
+.logo-type {
+  font-size: 3.6rem;
+  position: absolute;
+  margin: 0;
+  left: 10px;
+  top: -17px
+}
 
 nav {
   display: flex;
@@ -63,29 +44,28 @@ button.tab {
   padding-left: 2rem;
   padding-right: 2rem;
 }
+
 button:hover {
   cursor: pointer;
-} 
-
-/* ######################## Ingredients section ################################ */
-#sushi1-svg {
-  height: 6rem;
-  width: auto;
 }
 
+p {
+  color: rgb(100, 100, 100);
+}
+
+/* ######################## Ingredients section ################################ */
 section#ingredients-section {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   margin-right: 15vw;
   /* width: 30vw; */
 }
 
-section#ingredients-section div {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+#sushi1-svg {
+  height: 6rem;
+  width: auto;
 }
 
 section#ingredients-section div h1 {
@@ -101,10 +81,8 @@ section#ingredients-section div h1 {
 }
 
 #ingredients-section .content p {
-  margin: 0;
+  margin-top: 20px;
   max-width: 20rem;
-  flex-wrap: wrap;
-  padding-top: 15px;
 }
 
 /* ######################## Chef section ################################ */
@@ -118,7 +96,17 @@ section#chef-section {
 
 section#chef-section p {
   max-width: 55vw;
-  margin-top: 0;
+  margin-top: 0.7rem;
+}
+
+#chef-header {
+  display: flex;
+}
+
+#sword-svg  {
+  margin-left: 1rem;
+  width: 3.5rem;
+  height: auto;
 }
 
 /* ######################## Reviews section ################################ */
@@ -127,25 +115,28 @@ section#chef-section p {
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5rem;
+  margin-top: 7rem;
   margin-bottom: 1rem;
 }
 
 #reviews-section span {
   font-family: "anybody";
+  font-size: 0.85rem;
   font-variation-settings: 'wght' 600, 'wdth' 90, 'ital' 100;
+  color: black;
+  line-height: 1.2rem;
 }
 
 #reviews {
   display: flex;
   justify-content: space-around;
-  max-width: 95vw;
+  max-width: 80vw;
   margin-left: auto;
   margin-right: auto;
 }
 
 #reviews p {
-  font-size: small;
+  font-size: 0.75rem;
 }
 
 .image-mask {

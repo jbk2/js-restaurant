@@ -1,4 +1,5 @@
 import sushiImage from './assets/images/sushi1.svg';
+import swordImage from './assets/images/katanasword.svg';
 import pet1Image from './assets/images/pet1.webp';
 import pet2Image from './assets/images/pet2.jpg';
 import pet3Image from './assets/images/pet3.webp';
@@ -27,10 +28,13 @@ const chefSection = () => {
   let section = document.createElement('section');
   section.id = "chef-section";
   section.innerHTML = `
-    <h1>Chef Banzai</h1>
-    <p>Trained under Japanese sushi masters, since the age of 5 and for 72 years, Chef Banzai Sarumaku
-      knows well how to fillet a fish by now. True to his family's Samurai heritage his filleting
-      method is with sword, often accompanied by his notorious shreiking of famous samurai battle cries.
+    <div id="chef-header">
+      <h1>Chef Banzai</h1>
+      <img id="sword-svg" src="${swordImage}" alt="samurai sword">
+    </div>
+    <p>Trained under Japanese sushi masters, since the age of 5, and for 72 years, Chef Banzai Sarumaku
+      knows well how to fillet a fish. True to his family's Samurai heritage his filleting
+      method is by sword, often accompanied by his notorious shreiking of famous samurai battle cries.
     </p>
   `;
   return section;

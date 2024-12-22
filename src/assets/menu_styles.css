@@ -1,12 +1,11 @@
 table {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2rem;
   border-spacing: 2rem 0.8rem;
 }
 
 table:first-of-type {
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 
 .price {
@@ -32,7 +31,7 @@ tr td:nth-child(3) {
 .title .description {
   font-weight: normal;
   font-size: small;
-  color: gray;
+  color: rgb(100, 100, 100);
   display: block; /* to ensure on own line */
   margin-top: 0.25rem;
 }
