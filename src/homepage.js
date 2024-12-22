@@ -4,7 +4,6 @@ import pet2Image from './assets/pet2.jpg';
 import pet3Image from './assets/pet3.webp';
 
 function renderHomePage() {
-  console.log('connected ok');
   const contentDiv = document.getElementById('content')
   contentDiv.append(ingredientsSection(), chefSection(), reviewsSection());
 }
