@@ -1,7 +1,7 @@
-import sushiImage from './assets/sushi1.svg';
-import pet1Image from './assets/pet1.webp';
-import pet2Image from './assets/pet2.jpg';
-import pet3Image from './assets/pet3.webp';
+import sushiImage from './assets/images/sushi1.svg';
+import pet1Image from './assets/images/pet1.webp';
+import pet2Image from './assets/images/pet2.jpg';
+import pet3Image from './assets/images/pet3.webp';
 
 function renderHomePage() {
   const contentDiv = document.getElementById('content')
