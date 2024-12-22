@@ -5,7 +5,8 @@ import pet3Image from './assets/pet3.webp';
 
 function renderHomePage() {
   console.log('connected ok');
-  document.body.append(ingredientsSection(), chefSection(), reviewsSection());
+  const contentDiv = document.getElementById('content')
+  contentDiv.append(ingredientsSection(), chefSection(), reviewsSection());
 }
 
 const ingredientsSection = () => {
