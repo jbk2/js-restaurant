@@ -30,7 +30,6 @@ function renderContactPage() {
   const table = document.createElement('table');
   const contactData = [
     { th: 'Opening hours', td: 'Monday to Sunday, 12pm-12am' },
-    { th: 'Opening hours', td: 'Monday to Sunday, 12pm-12am' },
     { th: 'Address', td: 'Sushi street, Sushi town, Sushi county. SU5 H11' },
     { th: 'Telephone', td: '01234 567 890' },
     { th: 'Email', td: 'soshi@sushi.com' },
