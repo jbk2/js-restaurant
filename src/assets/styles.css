@@ -11,12 +11,28 @@ body {
 
 /* ######################## Header/tab section ################################ */
 
-.logo-type {
+@keyframes animate-weight {
+  0% {
+    font-variation-settings: 'wght' 800, 'wdth' 100, 'ital' 0;
+  }
+  50% {
+    font-variation-settings: 'wght' 860, 'wdth' 100, 'ital' 0;
+  }
+  100% {
+    font-variation-settings: 'wght' 800, 'wdth' 100, 'ital' 0;
+  }
+}
+
+#logo-type {
   font-size: 3.6rem;
   position: absolute;
   margin: 0;
   left: 10px;
-  top: -17px
+  top: -17px;
+}
+
+#logo-type.animate-logo {
+  animation: animate-weight 0.8s ease-in-out forwards;
 }
 
 nav {
