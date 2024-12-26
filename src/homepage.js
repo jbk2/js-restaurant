@@ -47,7 +47,7 @@ const reviewsSection = () => {
     <h1>Reviews</h1>
     <div id="reviews">
       <div id="review-1">
-        <div class="image-mask">
+        <div class="img-container">
           <img id="pet1" src="${pet1Image}" alt="aristocratic cat">
         </div>
         <p>
@@ -56,7 +56,7 @@ const reviewsSection = () => {
         </p>
       </div>
       <div id="review-2">
-        <div class="image-mask">
+        <div class="img-container">
           <img id="pet2" src="${pet2Image}" alt="aristocratic dog">
         </div>
         <p>
@@ -65,7 +65,7 @@ const reviewsSection = () => {
         </p>
       </div>
       <div id="review-3">
-        <div class="image-mask">
+        <div class="img-container">
           <img id="pet3" src="${pet3Image}" alt="aristocratic labrador">
         </div>
         <p>
