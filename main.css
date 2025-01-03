@@ -1,0 +1,284 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
+@font-face {
+  font-family: 'anybody';
+  src: url(6ecd9eb4e8fc59c2b7a5.ttf) format('truetype');
+}
+
+body {
+  font-family: "anybody";
+}
+
+/* ######################## Header/tab section ################################ */
+
+@keyframes animate-weight {
+  0% {
+    font-variation-settings: 'wght' 800, 'wdth' 100, 'ital' 0;
+  }
+  50% {
+    font-variation-settings: 'wght' 860, 'wdth' 100, 'ital' 0;
+  }
+  100% {
+    font-variation-settings: 'wght' 800, 'wdth' 100, 'ital' 0;
+  }
+}
+
+@keyframes animate-scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#logo-type {
+  font-size: 3.6rem;
+  position: absolute;
+  margin: 0;
+  left: 1vw;
+  top: -3.5vh;
+}
+
+#logo-type.animate-logo {
+  animation: animate-weight 0.8s ease-in-out forwards;
+}
+
+#japanese-flag {
+  font-size: 3rem;
+  position: absolute;
+  right: 1vw;
+  top: -4vh;
+}
+
+#japanese-flag.animate-flag {
+  animation: animate-scale 0.8s ease-in-out forwards;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 3rem;
+  border-bottom: 1px solid;
+  position: relative;
+}
+
+button {
+  font-family: "anybody";
+  font-variation-settings: 'wght' 500, 'wdth' 100, 'ital' 100;
+  font-size: small;
+}
+
+button.tab {
+  background-color: rgb(221, 251, 248);
+  border: 1px solid black;  
+  border-bottom: none;
+  border-top-left-radius: 0.25rem;  
+  border-top-right-radius: 0.25rem;
+  padding: 0.6rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+p {
+  color: rgb(100, 100, 100);
+}
+
+
+
+
+/* ######################## Ingredients section ################################ */
+section#ingredients-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 2rem;
+  margin-right: 15vw;
+  /* width: 30vw; */
+}
+
+#sushi1-svg {
+  height: 6rem;
+  width: auto;
+}
+
+section#ingredients-section div h1 {
+  margin-bottom: 0.7rem;
+}
+
+#ingredients-section .content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding-left: 0.2vw;
+}
+
+#ingredients-section .content p {
+  margin-top: 20px;
+  max-width: 20rem;
+}
+
+/* ######################## Chef section ################################ */
+section#chef-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 15vw;
+  margin-top: 3rem;
+}
+
+section#chef-section p {
+  max-width: 55vw;
+  margin-top: 0.7rem;
+}
+
+#chef-header {
+  display: flex;
+}
+
+#sword-svg  {
+  margin-left: 1rem;
+  width: 3.5rem;
+  height: auto;
+}
+
+/* ######################## Reviews section ################################ */
+#reviews {
+  display: flex;
+  justify-content: space-around;
+  max-width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 0.8rem
+}
+
+#review-1, #review-2, #review-3 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+}
+
+.img-container img {
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+#pet1 {
+  object-position: top;
+}
+
+#pet2 {
+  object-position: 50% 45%;
+}
+
+#pet3 {
+  /* object-position: 50% 50%; */
+}
+
+#reviews-section h1 {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7rem;
+  margin-bottom: 1rem;
+}
+
+#reviews-section span {
+  font-family: "anybody";
+  font-size: 0.85rem;
+  font-variation-settings: 'wght' 600, 'wdth' 90, 'ital' 100;
+  color: black;
+  line-height: 1.2rem;
+}
+
+#reviews p {
+  font-size: 0.75rem;
+  margin-left: 0.5rem;
+  max-width: 35vw;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 2rem 0.8rem;
+}
+
+table:first-of-type {
+  margin-top: 6rem;
+}
+
+.price {
+  /* padding-left: 0.7rem; */
+  font-variant-numeric: tabular-nums;
+}
+
+.price::before {
+  content: "£";
+  font-variation-settings: 'wght' 400, 'wdth' 110, 'ital' 50;
+}
+
+tr td:nth-child(3) {
+  padding-left: 3rem;
+}
+
+.title {
+  font-weight: bold;
+  font-size: medium;
+  display: block; /* to ensure on own line */
+}
+
+.title .description {
+  font-weight: normal;
+  font-size: small;
+  color: rgb(100, 100, 100);
+  display: block; /* to ensure on own line */
+  margin-top: 0.25rem;
+}
+#contact-page h1 {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+#contact-page>div {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+#location-image img {
+  /* padding-left: 8vw; */
+  width: 40vw;
+  height: auto;
+}
+
+#location-image img:hover {
+  cursor: pointer;
+}
+
+#contact-copy {
+  /* margin-left: 1.5rem; */
+  /* margin-top: 1rem; */
+}
+
+#contact-copy table {
+  margin-top: 2rem;
+}
+
+#contact-copy th {
+  text-align: left;
+}
+
+#contact-copy td {
+  color: rgb(100, 100, 100)
+}
