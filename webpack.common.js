@@ -20,7 +20,7 @@ module.exports = {
 			// Learn more about loaders from https://webpack.js.org/loaders/
 			{
         test: /\.css$/i,
-				use: [style-loader,'css-loader'],
+				use: ['style-loader','css-loader'],
 			},
 			{
         test: /\.html$/i,
