@@ -68,13 +68,13 @@ section#chef-section p {
   position: relative;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: top;
 }
 
 .img-container img {
   width: 80px;
   height: 80px;
-  border-radius: 40px;
+  border-radius: 4px;
   object-fit: cover;
 }
 
