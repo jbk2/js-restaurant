@@ -9,15 +9,13 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Production',
-      template: './src/template.html', // Use your src/index.html as a template
-      filename: 'index.html', // Output file in the dist folder
+      template: './src/template.html', // Use src/template.html as template
+      filename: 'index.html', // Output file name in dist/
     }),
   ],
 
   module: {
     rules: [
-      // Add your rules for custom modules here
-			// Learn more about loaders from https://webpack.js.org/loaders/
 			{
         test: /\.css$/i,
 				use: ['style-loader','css-loader'],

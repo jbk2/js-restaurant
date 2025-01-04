@@ -11,9 +11,7 @@ module.exports = merge(common, {
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css', // Cache-busting
     }),
-
-    new MiniCssExtractPlugin()
-  ].filter(Boolean),
+  ],
 
   module: {
     rules: [
